@@ -18,7 +18,6 @@ private:
 
     bool _lastReading = false; // флаг предыдущего состояния кнопки
     bool _buttonPress = false; // флаг состояния "краткое нажатие"
-                               // bool _buttonMulti = false;  // флаг состояния "двойное нажатие"
     bool _buttonHold = false;  // флаг состояния "долгое нажатие"
     bool _reading;
 
@@ -88,8 +87,7 @@ uint16_t key::tik()
             _onTime = millis();
             return 100;
         }
-        
-    }
+        }
 
     return 0;
 }
