@@ -87,7 +87,7 @@ uint16_t key::tik()
             _onTime = millis();
             return 100;
         }
-        }
+    }
 
     return 0;
 }
